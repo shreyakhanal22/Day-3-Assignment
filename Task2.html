@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const animals = [
+    'dogs', 'cats', 'rabbits', 'mice'
+   ]
+   animals.forEach(function(animal){
+       if(animal.includes('a'))
+       {  console.log(animal + ":true");
+               }else{
+                   console.log(animal + ":false");
+               }
+   });
+   var animalswitha = animals.filter(function (animal) {
+    return animal.includes("a");
+  });
+  
+  console.log(animalswitha);
+ </script>
+</body>
+</html>
